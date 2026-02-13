@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Greeting</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts"></div>
+
+    <div id="backBtn" onclick="goBack()">← Back</div>
+
+    <div class="container">
+      <div id="menu" class="card active">
+        <h1>Choose Your Greeting</h1>
+        <div class="buttons">
+          <button onclick="openValentine()">💖 Valentine</button>
+          <button onclick="openSingle()">😎 Single</button>
+        </div>
+      </div>
+
+      <div id="valentine" class="card valentineTheme">
+        <h2>Will you be my Valentine?</h2>
+        <div class="buttons">
+          <button id="yesBtn">Yes 💍</button>
+          <button id="noBtn">No 😂</button>
+        </div>
+      </div>
+
+      <div id="loveResult" class="card valentineTheme">
+        <h2 class="quote" id="loveQuote"></h2>
+      </div>
+
+      <div id="single" class="card singleTheme">
+        <h2 class="quote" id="singleQuote"></h2>
+        <h3>Singles Count: <span id="count"></span></h3>
+        <p class="added">You are added to the Proud Singles List 💙</p>
+      </div>
+    </div>
+
+    <footer>With ❤️ Aravindh</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
